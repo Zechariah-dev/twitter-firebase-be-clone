@@ -1,0 +1,32 @@
+{
+  "name": "twitter-firebase-be-cleon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Zechariah-dev/twitter-firebase-be-cleon.git",
+  "author": "Zechariah-dev <omoladesunday2017@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./build",
+    "build": "yarn run clean && tsc",
+    "build:watch": "tsc -w",
+    "start": "yarn build/index.js",
+    "start:dev": "yarn run build && nodemon build/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.12.1",
+    "firebase-admin": "^11.1.0",
+    "firebase-functions": "^4.0.0-rc.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/firebase": "^3.2.1",
+    "@types/node": "^18.11.0",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2"
+  }
+}
